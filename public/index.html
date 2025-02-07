@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <link rel="icon" type="image/x-icon" href="/public/image/favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VUBAVUBA</title>
@@ -14,12 +15,12 @@
             ><img src="image/vv-logo-2 1.png" height="50" width="90" alt=""
           /></a>
         </div>
-        <ul class="nav-links">
+        <!-- <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> -->
       </nav>
     </header>
     <div class="carousel">
@@ -133,7 +134,7 @@
           </div>
         </div>
         <div class="right-column">
-          <h2>Countries We Are In</h2>
+          <h2>Across Borders, Beyond Boundaries</h2>
           <div class="flag-links">
             <a href="https://www.vubavuba.rw/" class="flag-link">
               <img src="image/rwanda.png" alt="Rwanda" class="flag-img" />
@@ -148,6 +149,27 @@
         </div>
       </div>
     </section>
+       <div class="insights">
+        <div class="tab-container">
+      
+
+
+          <div id="success" class="tab-content active">
+            <div class="content-box">
+              <img src="/public/image/img2.jpg" alt="Success" />
+              <div class="content-text">
+                <h3>Our Impact in Rwanda</h3>
+                <p>
+                  We have successfully introduced our services in Rwanda,
+                  transforming businesses and communities with technology.
+                </p>
+                <a href="#" class="company-profile">Our company profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="faq-section" id="faq">
       <img src="image/leaves.png" alt="Leaves Image" class="leaves" />
       <h2>Frequently Ask Questions</h2>
@@ -287,45 +309,45 @@
        
           </div>
 
-          <div class="footer-section">
-            <h3>Quick Links</h3>
+                <div class="footer-section">
+            <h3>Useful Links</h3>
             <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#discover">Discover</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#hero">Terms & conditions</a></li>
+              <li><a href="#discover">Privacy policy</a></li>
+              <li><a href="#download">Refund policy</a></li>
+            
             </ul>
           </div>
+       
 
           <div class="footer-section">
             <h3>Contact</h3>
     
             <div class="social-icons">
-              <a href="#" title="Facebook"
+              <a href="https://www.facebook.com/vubavubarw/" title="Facebook"
                 ><img src="image/facebook-f-brands-solid.svg"
               /></a>
 
-              <a href="#" title="Twitter"
+              <a href="https://x.com/vubavubarw/" title="Twitter"
                 ><img src="image/linkedin-in-brands-solid.svg" alt=""
               /></a>
 
-              <a href="#" title="Instagram"
+              <a href="https://www.instagram.com/vubavubarw/?hl=en" title="Instagram"
                 ><img src="image/youtube-brands-solid.svg" alt=""
               /></a>
 
-              <a href="#" title="LinkedIn"
+              <a href="https://www.linkedin.com/company/vubavuba/?originalSubdomain=rw" title="LinkedIn"
                 ><img src="image/instagram-brands-solid.svg" alt=""
               /></a>
             </div>
-               <a
+               <!-- <a
               href="https://certification.dbi.rw/public?name=Vuba%20Vuba%20Africa%20LTD"
               target="_blank"
               ><div class="seal">
                 <img src="./image/seal.svg" alt="Seal" srcset="" />
                 <p>Trust Seal VALID!</p>
               </div></a
-            >
+            > -->
           </div>
         </div>
   
@@ -334,7 +356,23 @@
           <p>&copy; 2025 VUBAVUBA. All rights reserved.</p>
         </div>
       </footer>
+  <script>
+      document.querySelectorAll(".tab-link").forEach((button) => {
+        button.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-link")
+            .forEach((btn) => btn.classList.remove("active"));
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((tab) => tab.classList.remove("active"));
 
+          button.classList.add("active");
+          document
+            .getElementById(button.getAttribute("data-tab"))
+            .classList.add("active");
+        });
+      });
+    </script>
     <script src="app.js"></script>
   </body>
 </html>
